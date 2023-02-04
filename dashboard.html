@@ -4,7 +4,7 @@
   <head>
     <title>Fastodo</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/dashboard.css">
     <script src="https://kit.fontawesome.com/44a1dd0b54.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
   </head>
@@ -14,13 +14,13 @@
         Use fastodo on tablet or computer.<br>
         The mobile app version is still in progress.
       </p>
-      <a class="start" href="/fastodo/">Return To Home</a>
+      <a class="start" href="index.html">Return To Home</a>
     </div>
 
     <div class="left-bar">
       <div class="fastodo">
         <img class="icon" src="favicon.ico"></img>
-        <a href="/fastodo" class="name">Fastodo </a>
+        <a href="index.html" class="name">Fastodo </a>
       </div>
       <div class="header">My Lists</div>
       <div class="lists"></div>
@@ -32,8 +32,15 @@
         <div class="date"></div>
         <div>
           <div class="greet-message"></div>
+          <span id="userEmail" class="usr-name"></span>  
           <div class="gray">What's your plan for today?</div>
-        </div>
+          <button id="signout" title="Logout">
+            <a href="#">
+              <i class='bx bx-log-out icon'></i>
+              <span class="text nav-text">Logout</span>
+          </a>
+          </button>
+         </div>
       </div>
     </div>
     <div class="todo-list">
@@ -122,7 +129,16 @@
       <input type="text"></input>
       <i class="fa-solid fa-xmark"></i>
     </template>
-
-    <script src="script.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-auth.js"></script>
+    <script src="js/firebase-app-compat.js"></script>
+    <script src="js/firebase-storage-compat.js"></script>
+    <script src="js/firebase-analytics-compat.js"></script>
+    <script src="js/firebase-database-compat.js"></script>
+    <script src="js/firebase-firestore-compat.js"></script>
+    <script src="js/firebase-auth-compat.js"></script>
+    <script src="/js/auth.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/session.js"></script>
   </body>
 </html>

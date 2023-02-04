@@ -48,6 +48,10 @@
   font-size: min(35px, 3vw);
 }
 
+.usr-name{
+  font-size: min(35px, 2vw);
+}
+
 .gray {
   font-size: min(30px, 3vw);
   color: #909090;
