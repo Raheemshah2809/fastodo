@@ -103,6 +103,19 @@ img {
   margin-bottom: 5px;
 }
 
+.header2{
+  font-weight: 700;
+  margin-bottom: 5px;
+  background-color: var(--todo-background);
+}
+
+.header3{
+  font-weight: 700;
+  margin-bottom: 5px;
+  padding-top: 10px;
+  background-color: var(--todo-background);
+}
+
 .lists {
   padding: 10px 0;
   display: flex;

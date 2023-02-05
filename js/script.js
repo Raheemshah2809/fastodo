@@ -5,7 +5,7 @@ const dayName = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
 const monthName = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
     'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
-const priorityToColor = {'high': '#f2c86b', 'mid': '#ffffda', 'low': '#a2a2a2'}
+const priorityToColor = {'high': '#ad1723', 'mid': '#ffffda', 'low': '#a2a2a2'}
 
 const date = new Date();
 let currentYear = date.getFullYear(); 
@@ -454,10 +454,15 @@ function createCalendar(y, m, todolist) {
         // there are todos on that day
         if(date.getFullYear() == y && date.getMonth() == m &&
           date.getDate() == i-s+1) {
-          tmp.style.backgroundColor = '#505050';
+            tmp.style.backgroundColor = {priorityToColor};
+            // tmp.style.backgroundColor = '#505050'; //shows if there is an todo event on
           break;
         }
       }
+
+      // const color = priorityToColor[this.priority];
+      // this.todoCheckboxEle.style.borderColor = color;
+      // this.todoCheckboxEle.style.setProperty('--checkbox-background', color);
 
       // show the todo on that day
       tmp.addEventListener('click', () => {
