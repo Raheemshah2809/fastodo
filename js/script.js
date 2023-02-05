@@ -245,7 +245,11 @@ class Todo {
     this.todoTagEle.value = '#' + todoTag;
     
     this.todoCheckboxEle = this.element.querySelector('.todo-checkbox');
-
+    this.todoCheckboxEle = this.element.querySelector('.todo-checkbox');
+    // const priorityLabel = document.createElement('label');
+    // priorityLabel.classList.add('priority-label');
+    // priorityLabel.innerText = priority;
+    // this.todoCheckboxEle.append(priorityLabel);
     this.deleteButtonEle = this.element.querySelector('.delete-button');
 
     // update priority
@@ -458,8 +462,8 @@ function createCalendar(y, m, todolist) {
         // there are todos on that day
         if(date.getFullYear() == y && date.getMonth() == m &&
           date.getDate() == i-s+1) {
-            // tmp.style.backgroundColor = {priorityToColor};
-            tmp.style.backgroundColor = '#EEE'; //shows if there is an todo event on
+          const priority = todolist.uncheckedTodo[j].priority;
+          tmp.style.backgroundColor = priorityToColor[priority]; 
           break;
         }
       }

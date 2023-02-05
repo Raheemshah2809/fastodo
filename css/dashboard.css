@@ -277,7 +277,7 @@ img {
   color: var(--todo-gray);
   background-color: var(--todo-background);
   line-height: 50px;
-  padding: 10px;
+  padding: 20px;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -378,7 +378,7 @@ img {
   color: var(--todo-gray);
   background-color: var(--todo-background);
   line-height: 50px;
-  padding: 10px;
+  padding: 20px;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -402,14 +402,20 @@ img {
 }
 
 .todo-checkbox {
-  padding: 0;
-  margin: 0;
-  width: 18px;
-  height: 18px;
-  border: 1.5px solid var(--todo-gray);
-  border-radius: 50%;
-  cursor: pointer;
-  flex-shrink: 0;
+  border-color: rgb(173, 23, 35);
+  --checkbox-background: #ad1723;
+  width: auto;
+  height: auto;
+  border-radius: 5px;
+  background-color: #ad1723;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .todo-checkbox[checked = 'false'] {
