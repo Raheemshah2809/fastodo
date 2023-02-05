@@ -262,7 +262,7 @@ class Todo {
     this.addEvent();
   }
 
-  priorityToColor() {
+   priorityToColor() {
     return priorityToColor[this.priority];
   }
 
@@ -459,7 +459,7 @@ function createCalendar(y, m, todolist) {
         if(date.getFullYear() == y && date.getMonth() == m &&
           date.getDate() == i-s+1) {
             // tmp.style.backgroundColor = {priorityToColor};
-            tmp.style.backgroundColor = this.priorityToColor(); //shows if there is an todo event on
+            tmp.style.backgroundColor = '#EEE'; //shows if there is an todo event on
           break;
         }
       }
