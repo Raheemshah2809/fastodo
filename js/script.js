@@ -454,8 +454,8 @@ function createCalendar(y, m, todolist) {
         // there are todos on that day
         if(date.getFullYear() == y && date.getMonth() == m &&
           date.getDate() == i-s+1) {
-            tmp.style.backgroundColor = {priorityToColor};
-            // tmp.style.backgroundColor = '#505050'; //shows if there is an todo event on
+            // tmp.style.backgroundColor = {priorityToColor};
+            tmp.style.backgroundColor = '#505050'; //shows if there is an todo event on
           break;
         }
       }
