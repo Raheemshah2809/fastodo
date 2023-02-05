@@ -11,7 +11,7 @@ const showLogin = () => {
 };
 
 const verifyPassword = (email) => {
-    const signIn = () => window.location.replace("signin.html");
+    const signIn = () => window.location.replace("signup.html");
     auth
         .sendPasswordResetEmail(email)
         .then(function () {

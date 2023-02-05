@@ -94,6 +94,7 @@ img {
   text-decoration: none;
   font-size: min(25px, 3vw);
   font-weight: 700;
+  padding-left: 6px;
 }
 
 .header {
@@ -129,6 +130,13 @@ img {
   background-color: #f2c86b;
 }
 
+.lists :hover {
+  background-color: #f2c86b;
+  transition: 1s;
+  
+}
+
+
 .lists .active input {
   background-color: #f2c86b;
   color: #141414;
@@ -152,15 +160,25 @@ img {
   width: min(150px, 80%);
   height: 50px;
   margin: 0 auto;
-  line-height: 20px;
-  padding-left: 8px;
+  line-height: 50px;
   border-radius: 8px;
   color: #a2a2a2;
   cursor: pointer;
+  text-align: center;
+}
+ .list-creator:hover {
+  background-color: #f2c86b;
+  transition: 0.5s;
+  color: #EEE;
 }
 
 .fa-plus {
   color: #a2a2a2;
+  background-color: transparent;
+}
+
+.fa-plus:hover {
+  color: #EEE;
 }
 
 .foot {
@@ -176,7 +194,7 @@ img {
   color: #a2a2a2;
 }
 
-.sort-list {
+/* .sort-list{
   margin-top: 15px;
   margin-left: 35px;
   background-color: #141414;
@@ -187,6 +205,14 @@ img {
   justify-content: space-around;
   gap: 10px;
   flex-wrap: wrap;
+  display: inline-block; 
+	text-align: left; 
+} */
+
+.sort-list :hover {
+  background-color: #f2c86b;
+  transition: 0.5s;
+  color: #141414;
 }
 
 .sort-method-selector {
@@ -213,11 +239,15 @@ img {
   width: 50px;
   cursor: pointer;
   transition: 0.2s ease-in-out;
+  
 }
+
+
 
 .show-all:hover {
   background-color: #f2c86b;
   color: #141414;
+  transition: 1s;
 }
 
 .todo-list {
@@ -244,9 +274,15 @@ img {
   transition: max-height 0.5s ease-in-out;
 }
 
+/* .todo-creator:hover {
+  background-color: #f2c86b;
+  transition: 1s;
+} */
+
 .todo-creator * {
   background-color: var(--todo-background);
 }
+
 
 .todo-list label {
   margin-left: 2px;
@@ -258,9 +294,20 @@ img {
   outline: none;
 }
 
+
+
+::placeholder {
+  color: #EEE;
+}
+
 .todo-creator-date {
   margin-left: 20%;
+  text-transform: uppercase;
+  color-scheme: dark;
+  
 }
+
+
 
 .todo-creator-tag {
   width: 50%;
@@ -439,6 +486,7 @@ img {
 
 .right-bar * {
   background-color: var(--todo-background);
+  text-align: center;
 }
 
 .right-bar .calendar .day {
@@ -489,6 +537,25 @@ img {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.2s ease-in-out;
+}
+
+.show-all2 {
+  background-color: #505050;
+  width: 100px;
+  height: 30px;
+  margin: 0 auto 50px auto;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  position: absolute;
+  bottom: 10px;
+  right: 109px;
+}
+
+.show-all2:hover {
+  background-color: #de5050;
 }
 
 .dim {

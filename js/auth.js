@@ -1,13 +1,13 @@
 // Your web app's Firebase configuration
 var firebaseConfig = {
-    apiKey: "AIzaSyAgF9KUjPINzEvI2M3_s9wmahVD88J52Z4",
-    authDomain: "studentmarketplaceindex.firebaseapp.com",
-    databaseURL: "https://studentmarketplaceindex-default-rtdb.europe-west1.firebasedatabase.app",
-    projectId: "studentmarketplaceindex",
-    storageBucket: "studentmarketplaceindex.appspot.com",
-    messagingSenderId: "1083392969591",
-    appId: "1:1083392969591:web:03b9f5b1926a4a49f76f72"
-
+    apiKey: "AIzaSyC6_-vpJ17zMtuKxr1xhexdAYpI7b9iXRA",
+    authDomain: "fastodo-d9a98.firebaseapp.com",
+    databaseURL: "https://fastodo-d9a98-default-rtdb.europe-west1.firebasedatabase.app",
+    projectId: "fastodo-d9a98",
+    storageBucket: "fastodo-d9a98.appspot.com",
+    messagingSenderId: "634281129841",
+    appId: "1:634281129841:web:4b941bec04cc3b196728d0",
+    measurementId: "G-NTP61NQEDX"
 };
 
 // Initialize Firebase

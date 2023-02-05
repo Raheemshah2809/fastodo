@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Source+Code+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,600;1,700;1,800&display=swap');
 
 body {
     height: 100vh;
@@ -37,6 +38,7 @@ body {
 
 .forms-in h3 {
     text-align: center;
+    font-family: Inter, sans-serif;
 }
 
 .forms-in input {
@@ -52,13 +54,14 @@ body {
 .forms-in button {
     border: none;
     padding: 7px 20px;
-    background: #e8f8ff;
-    color: #168ab8;
+    background: #000000;
+    color: #f2c86b;
     border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
     display: block;
     margin: 0 auto;
+    font-family: Inter, sans-serif;
 
 }
 
@@ -355,7 +358,7 @@ body {
 .title1 {
     font-size: 25px;
     font-weight: bold;
-    font-family: Poppins, sans-serif;
+    font-family: Inter, sans-serif;
     text-align: center;
 }
 
@@ -396,12 +399,12 @@ body {
 
 .tooltip {
     position: relative;
-    background: #ff3466;
+    background: #000000;
     padding: 3px 9px;
     margin: 5px;
     font-size: 15px;
     border-radius: 100%;
-    color: #fff;
+    color: #f2c86b;
     cursor: pointer;
 }
 
@@ -416,14 +419,14 @@ body {
 .tooltip:before {
     border-width: 10px 8px 0 8px;
     border-style: solid;
-    border-color: #ff3466 transparent transparent transparent;
+    border-color: #000000 transparent transparent transparent;
     top: -15px;
     transform: translateY(20px);
 }
 
 .tooltip:after {
     content: attr(data-tooltip);
-    background: #ff3466;
+    background: #000000;
     width: 160px;
     height: 88px;
     font-size: 13px;
@@ -466,12 +469,12 @@ body {
 
 .tooltip2 {
     position: relative;
-    background: #ff3466;
+    background: #000000;
     padding: 3px 9px;
     margin: 5px;
     font-size: 15px;
     border-radius: 100%;
-    color: #fff;
+    color: #f2c86b;
     cursor: pointer;
 }
 
@@ -486,14 +489,14 @@ body {
 .tooltip2:before {
     border-width: 10px 8px 0 8px;
     border-style: solid;
-    border-color: #ff3466 transparent transparent transparent;
+    border-color: #000000 transparent transparent transparent;
     top: -15px;
     transform: translateY(20px);
 }
 
 .tooltip2:after {
     content: attr(data-tooltip);
-    background: #ff3466;
+    background: #000000;
     width: 160px;
     height: 40px;
     font-size: 13px;
@@ -504,6 +507,7 @@ body {
     border-radius: 5px;
     letter-spacing: 1px;
     transform: translateY(20px);
+    color: #f2c86b;
 }
 
 .tooltip2:hover::before,

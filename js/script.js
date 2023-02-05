@@ -176,12 +176,12 @@ class TodoList {
   // update the todo list
   update() {
     // update sort button color
-    document.querySelectorAll('.sort-button').forEach(button => {
-      button.style.backgroundColor = '#505050';
-      button.style.color = '#e4e4e4';
-    });
-    document.querySelector(this.sortMethod).style.backgroundColor = '#f2c86b';
-    document.querySelector(this.sortMethod).style.color = '#141414';
+    // document.querySelectorAll('.sort-button').forEach(button => {
+    //   button.style.backgroundColor = '#505050';
+    //   button.style.color = '#e4e4e4';
+    // });
+    // document.querySelector(this.sortMethod).style.backgroundColor = '#f2c86b';
+    // document.querySelector(this.sortMethod).style.color = '#141414';
 
     // sort
     if(this.sortMethod == '.sort-name') {
