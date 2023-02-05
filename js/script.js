@@ -262,6 +262,10 @@ class Todo {
     this.addEvent();
   }
 
+  priorityToColor() {
+    return priorityToColor[this.priority];
+  }
+
   update() {
     this.todoName = this.todoNameEle.value;
     this.todoDate = this.todoDateEle.value;
@@ -455,10 +459,11 @@ function createCalendar(y, m, todolist) {
         if(date.getFullYear() == y && date.getMonth() == m &&
           date.getDate() == i-s+1) {
             // tmp.style.backgroundColor = {priorityToColor};
-            tmp.style.backgroundColor = '#505050'; //shows if there is an todo event on
+            tmp.style.backgroundColor = this.priorityToColor(); //shows if there is an todo event on
           break;
         }
       }
+
 
       // const color = priorityToColor[this.priority];
       // this.todoCheckboxEle.style.borderColor = color;
@@ -472,6 +477,7 @@ function createCalendar(y, m, todolist) {
         activeList.update();
       })
     }
+
 
     // mark today
     const today = new Date();
