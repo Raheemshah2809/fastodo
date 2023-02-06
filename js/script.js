@@ -5,7 +5,7 @@ const dayName = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
 const monthName = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
     'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
-const priorityToColor = {'high': '#ad1723', 'mid': '#ffffda', 'low': '#a2a2a2'}
+const priorityToColor = {'high': '#ad1723', 'mid': '#C3801A', 'low': '#C615A6'}
 
 const date = new Date();
 let currentYear = date.getFullYear(); 
