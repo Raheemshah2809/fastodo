@@ -3,7 +3,7 @@
 :root {
   --todo-background: #252525;
   --todo-gray: #a2a2a2;
-  --left-bar-width: min(20%, 210px);
+  --left-bar-width: min(20%, 240px);
   --right-bar-width: min(30%, 320px);
   --calendar-side: min(250px, 22vw);
 }
@@ -114,6 +114,14 @@ img {
   margin-bottom: 5px;
   padding-top: 10px;
   background-color: var(--todo-background);
+}
+
+.header4{
+  font-weight: 700;
+  margin-bottom: 5px;
+  padding-top: 10px;
+  background-color: var(--todo-background);
+  color: greenyellow;
 }
 
 .lists {
@@ -625,7 +633,7 @@ img {
     display: none;
   }
 
-  .left-bar, .right-bar {
+  .left-bar, .right-bar { 
     display: none;
   }
 
@@ -633,3 +641,17 @@ img {
     display: block;
   }
 }
+
+
+/* added support for older browsers to remove input title when typing */
+::-webkit-input-placeholder { opacity: 1; -webkit-transition: opacity .5s; transition: opacity .5s; }  /* Chrome <=56, Safari < 10 */
+:-moz-placeholder { opacity: 1; -moz-transition: opacity .5s; transition: opacity .5s; } /* FF 4-18 */
+::-moz-placeholder { opacity: 1; -moz-transition: opacity .5s; transition: opacity .5s; } /* FF 19-51 */
+:-ms-input-placeholder { opacity: 1; -ms-transition: opacity .5s; transition: opacity .5s; } /* IE 10+ */
+::placeholder { opacity: 1; transition: opacity .5s; } /* Modern Browsers */
+    
+*:focus::-webkit-input-placeholder { opacity: 0; } /* Chrome <=56, Safari < 10 */
+*:focus:-moz-placeholder { opacity: 0; } /* FF 4-18 */
+*:focus::-moz-placeholder { opacity: 0; } /* FF 19-50 */
+*:focus:-ms-input-placeholder { opacity: 0; } /* IE 10+ */
+*:focus::placeholder { opacity: 0; } /* Modern Browsers */

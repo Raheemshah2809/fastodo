@@ -128,6 +128,7 @@ window.addEventListener('load', () => {
     }
 })
 
+/* show password function */
 function myFunction() {
     var x = document.getElementById("login-password");
     if (x.type === "password") {

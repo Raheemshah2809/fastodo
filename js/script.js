@@ -110,6 +110,8 @@ class TodoList {
     });
   }
 
+  
+
   // create a new todo
   addTodo(inputName, inputDate, inputPriority, inputTag, inputChecked) {
     const newTodo =
